@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body{
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(bg2.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.heading{
+    font-weight: bold;
+    font-size: 40px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2%;
+    margin-left: 40%;
+    color: white;
+}
+.navbar{
+    width: 90%;
+    margin-left: 40px;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+
+}
+.navbar ul li::after{
+    content:'';
+    height:3px;
+    width:0;
+    background:#009688;
+    position:absolute;
+    left:0;
+    bottom:-10px;
+    transition: 0.1s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+.product{
+    top: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 70px;
+    padding: 20px;
+
+}
+.productcard{
+    width: 250px;
+    height: 450px;
+    /* background-color: rgba(30,144,255,0.2); */
+    background-color: white;
+    border: none;
+    border-radius: 15px;
+    margin:auto;
+    margin-bottom: 20px;
+    padding: 10px;
+    
+
+}
+.productcard p{
+    padding: 5px;
+}
+.productcard h1{
+    padding: 5px;
+    font-weight: 200;
+    font-size: 30px;
+}
+.productcard img{
+    width: 250px;
+    height: 250px;
+}
+p{
+    color:rgba(0,0,0,0.8);
+
+}
+h2{
+    color: white;
+}
+button{
+    width: 100px;
+    padding: 10px 0;
+    text-align: center;
+    margin:20px 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    border: 2px solid dodgerblue;
+    background:transparent;
+    color:black;
+    cursor: pointer;
+}
+button:hover{
+    background-color: dodgerblue;
+    color: white;
+    border: none;
+}
